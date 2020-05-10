@@ -39,10 +39,20 @@ document.addEventListener('DOMContentLoaded', () => {
             img: 'images/milkshake.png'
         },
         {
+            name: 'milkshake',
+            img: 'images/milkshake.png'
+        },
+        {
+            name: 'pizza',
+            img: 'images/pizza.png'
+        },
+        {
             name: 'pizza',
             img: 'images/pizza.png'
         }
     ]
+
+    cardArray.sort(() => 0.5 - Math.random())
 
     const grid = document.querySelector('.grid');
     const result = document.querySelector('#result');
