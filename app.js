@@ -49,8 +49,23 @@ document.addEventListener('DOMContentLoaded', () => {
         {
             name: 'white',
             img: 'images/white.png'
-        },
+        }
     ]
 
+    const grid = document.querySelector('.grid');
+
     // Create game board
+    function createBord() {
+        for (let i = 0; i < cardArray.length; i++) {
+            const card = document.createElement('img');
+            card.setAttribute('src', 'images/blank.png');
+            card.setAttribute('data-id', i);
+            grid.appendChild(card);
+
+        }
+
+    }
+
+    createBord()
+
 });
